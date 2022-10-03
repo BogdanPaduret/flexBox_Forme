@@ -1,0 +1,175 @@
+/* general */
+*{
+    box-sizing: border-box;
+}
+
+input,
+label,
+select {
+    display: block;
+    width: 100%;
+}
+label{
+    height: 20px;
+    margin-bottom: 10px;
+}
+
+input,
+select{
+    height: 50px;
+}
+
+p,
+a,
+h1,
+h2,
+h3 {
+    margin: 0px;
+    padding: 0px;
+}
+
+.asterisk{
+    display: inline;
+    width: 7px;
+}
+
+/* body styles */
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* header styles */
+header {
+    background: linear-gradient(to right, #cb6e66, #f3a075);
+
+    margin: 0px;
+    padding: 0px;
+    /* border: 1px solid red; */
+    border-top: 5px solid #295296;
+
+    padding-left: 80px;
+
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+header>* {
+    /* border: 2px dashed green; */
+    margin: 0px;
+    padding: 0px;
+    color: white;
+}
+
+header>p {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+header>h1 {
+    font-size: 40px;
+    text-shadow: 1px 1px 3px rgb(56, 56, 56);
+}
+
+/* main styles */
+main {
+    margin: 0px;
+    padding: 0px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    padding-left: 80px;
+    background-color: #faf6ed;
+}
+
+    /* legend */
+    .main-legend {
+        margin: 40px 0px;
+    }
+
+    /* main-info styles*/
+    .main-info {
+        width: 80%;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+        /* basic-info styles */
+        .basic-info {
+            width: 45%;
+        }
+        .basic-item {
+            height: 100px;
+            /* border: 1px solid red; */
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        /* tshirt-info styles */
+        .tshirt-info {
+            width: 50%;
+        
+            align-items: stretch;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        
+        .tshirt-item {
+            margin: 0px;
+
+            height: 100px;
+            /* border: 1px solid blue; */
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+        }
+            /* t-shirt categories */
+            .tshirt-categories {
+                width: 80%;
+        
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+                /* t-shirt parameters */
+                .tshirt-parameters {
+                    width: 100%;
+
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+                    .tshirt-parameter{
+                        display: flex;
+                        flex-direction: column;
+                    }
+                        .tshirt-size{
+                            width: 40%;
+                            margin-right: 10px;
+                        }
+                        .tshirt-design{
+                            width: 60%;
+                        }
+            .tshirt-job {
+                width: 100%;
+            }
+
+
+
+
+.subtitle{
+    height: 50px;
+}

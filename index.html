@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercitiu Forme</title>
+</head>
+
+<body>
+    <header>
+        <p>Register for</p>
+        <h1>Full Stack Conference</h1>
+    </header>
+
+    <main>
+
+        <div class="main-item main-legend"><!-- legend -->
+            <img class="asterisk" src="pictures/asterisk.png" alt="">
+            <p class="asterisk"> - required field</p>
+        </div>
+
+        <section class="main-item main-info"><!-- basic info and t-shirt info -->
+            <section class="info-item basic-info"><!-- basic info -->
+                <h2 class="basic-item subtitle">Basic Info</h2>
+
+                <section class="basic-item"><!-- name -->
+                    <label for="name">*Name:</label>
+                    <input id="name" type="text" name="name">
+                </section>
+
+                <section class="basic-item"><!-- email -->
+                    <label for="email">*Email Address:</label>
+                    <input id="email" type="text" name="email">
+                </section>
+
+                <section class="basic-item"><!-- job role -->
+                    <label for="job">job role</label>
+                    <select name="job-role" id="job">
+                        <option value="" selected disabled>Select Job Role</option>
+                    </select>
+                </section>
+
+            </section>
+
+            <section class="info-item tshirt-info"><!-- t-shirt info -->
+                <section class="tshirt-categories"><!-- t-shirt -->
+                    <h2 class="tshirt-item subtitle">T-Shirt Info</h2>
+
+                    <section class="tshirt-item tshirt-parameters"><!-- size and design -->
+                        <section class="tshirt-parameter tshirt-size"><!-- size -->
+                            <label for="size">Size:</label>
+                            <select name="size" id="size">
+                                <option value="s">S</option>
+                                <option value="m" selected>M</option>
+                                <option value="l">L</option>
+                            </select>
+                        </section>
+
+                        <section class="tshirt-parameter tshirt-design"><!-- design -->
+                            <label for="design">Design:</label>
+                            <select name="design" id="design">
+                                <option value="" disabled selected>Select theme</option>
+                            </select>
+                        </section>
+
+                    </section>
+
+                    <section class="tshirt-item"><!-- color -->
+                        <label for="color">Color:</label>
+                        <select name="color" id="color">
+                            <option value="" disabled selected>Select design theme above</option>
+                        </select>
+                    </section>
+
+                </section>
+
+                <section class="tshirt-job tshirt-item"><!-- other job -->
+                    <label for="other-job-role"></label>
+                    <input type="text" id="other-job-role" placeholder="Other job role?">
+                </section>
+
+            </section>
+
+        </section>
+
+        <section class="main-item main-courses"><!-- courses -->
+            <section>
+                <article>
+                    <div>
+                        <input type="checkbox" name="main-conference" id="button-main-conference">
+                        <label for="button-main-conference">main conference</label>
+                        <img src="" alt="main conference">
+                    </div>
+                    <div>
+                        <p>$200</p>
+                    </div>
+                </article>
+            </section>
+
+            <section>
+                <article>
+                    <div>
+                        <input type="checkbox" id="button-js-libraries-ws">
+                        <label for="button-js-libraries-ws">JavaScript Libraries Workshop</label>
+                        <img src="" alt="js libraries workshop">
+                    </div>
+                    <div>
+                        <p>Tuesday 9am-12pm</p>
+                        <p>$100</p>
+                    </div>
+                </article>
+
+                <article>
+                    <div>
+                        <input type="checkbox" id="button-nodejs-ws">
+                        <label for="button-nodejs-ws">Node.js Workshop</label>
+                        <img src="" alt="node.js workshop">
+                    </div>
+                    <div>
+                        <p>Tuesday 1pm-4pm</p>
+                        <p>$100</p>
+                    </div>
+                </article>
+
+                <article>
+                    <div>
+                        <input type="checkbox" id="button-js-framework-ws">
+                        <label for="button-js-framework-ws">JavaScript Frameworks Workshop</label>
+                        <img src="" alt="js Frameworks workshop">
+                    </div>
+                    <div>
+                        <p>Tuesday 9am-12pm</p>
+                        <p>$100</p>
+                    </div>
+                </article>
+
+                <article>
+                    <div>
+                        <input type="checkbox" id="button-build-tools-ws">
+                        <label for="button-build-tools-ws">Build tools Workshop</label>
+                        <img src="" alt="build tools workshop">
+                    </div>
+                    <div>
+                        <p>Tuesday 1pm-4pm</p>
+                        <p>$100</p>
+                    </div>
+                </article>
+
+                <article>
+                    <div>
+                        <input type="checkbox" id="button-npm-ws">
+                        <label for="button-npm-ws">npm Workshop</label>
+                        <img src="" alt="npm workshop">
+                    </div>
+                    <div>
+                        <p>Wednesday 9am-12pm</p>
+                        <p>$100</p>
+                    </div>
+                </article>
+
+                <article>
+                    <div>
+                        <input type="checkbox" id="button-express-ws">
+                        <label for="button-express-ws">Express Workshop</label>
+                        <img src="" alt="express workshop">
+                    </div>
+                    <div>
+                        <p>Wednesday 1pm-4pm</p>
+                        <p>$100</p>
+                    </div>
+                </article>
+
+                <p>Total: <span>$0</span></p>
+            </section>
+        </section>
+
+
+        <section class="main-item main-payment"><!-- payment -->
+            <h2>Payment Info</h2>
+
+            <article>
+                <label for="payment-method">I'm going to pay with:</label>
+                <select id="payment-method">
+                    <option value="" disabled selected>Select Payment Method</option>
+                </select>
+            </article>
+
+            <article>
+                <label for="expiration-date">Expiration Date:</label>
+                <select id="expiration-date">
+                    <option value="" disabled selected>Select Date</option>
+                </select>
+            </article>
+
+            <article>
+                <label for="expiration-year">Expiration year:</label>
+                <select id="expiration-year">
+                    <option value="" disabled selected>Select Year</option>
+                </select>
+            </article>
+
+            <article><label for="card-number">*Card Number:</label><input type="text" id="card-number"></article>
+            <article><label for="zip-code">*Zip Code:</label><input type="text" id="zip-code"></article>
+            <article><label for="cvv">*CVV:</label><input type="text" id="cvv"></article>
+
+            <article>
+                <h3>PayPal</h3>
+                <p>If you selected the PayPal option we'll take you to PayPal's site to set up you billing information,
+                    when you click "Register" below.</p>
+            </article>
+
+            <article>
+                <h3>Bitcoin</h3>
+                <p>If you selected the Bitcoin option we'll take you to the Coinbase site to set up your billing
+                    information. Due to the nature of exchanging Bitcoin, all Bitcoin transactions will be final.</p>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <button>
+            Register
+        </button>
+    </footer>
+</body>
+
+</html>
